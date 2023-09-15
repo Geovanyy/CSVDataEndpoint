@@ -16,7 +16,7 @@ public class CsvController {
 
     @GetMapping("/download-csv")
     public ResponseEntity<byte[]> downloadCsv() {
-        ClassPathResource csvFile = new ClassPathResource("jurisprudencia-metadados.csv");
+        ClassPathResource csvFile = new ClassPathResource("jurisprudencia-arquivos.csv");
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.parseMediaType("text/csv"));
